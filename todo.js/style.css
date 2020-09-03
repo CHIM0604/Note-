@@ -1,0 +1,161 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: linear-gradient(to right,#654ea3, #9198e5);
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 5rem;
+    color: rgba(245, 171, 53, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addingField {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+}
+#addingBar {
+    width: 850px;
+    height: 50px;
+    border: none;
+    font-size: 1.75rem;
+    outline: none;
+}
+#addingButton {
+    width: 40px;
+    height: 52px;
+    margin-left: -40px;
+    background: rgba(245, 215, 110, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.75rem;
+
+}
+#addingButton:hover {
+    background: yellow;
+    font-size: 2rem;
+}
+.pb {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(0); /*scale(0) hide */
+    transition: 200ms ease-in-out; /*smooth animation*/
+    border: 1px solid black;
+    border-radius: 10px;
+    width: auto;
+    max-height: 90%;
+    z-index: 10;
+    background-color: white;
+}
+.pb.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.pb-title {
+    background: rgba(245, 171, 53, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.b {
+  background: rgba(245, 215, 110, 1);
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.b:hover {
+  background: yellow;
+}
+.details {
+    width: auto;
+    border: none;
+    outline: none;
+}
+#overlay {
+    transition: 200ms ease-in-out;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+#count {
+    margin-top: 40px;
+    color: white;
+    font-size: 2rem;
+}
+#noteNumber {
+    color: rgba(245, 171, 53, 1);
+}
+hr {
+    height: 5px;
+    background: white;
+}
+.storedrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.storedBlock {
+    cursor: pointer;
+    color: white;
+    background: rgba(245, 171, 53, 1);
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 25px;
+    font-size: 1.5rem;
+}
+.storedBlock:hover {
+    background: rgba(0, 0, 0, .5);
+    font-weight: bold;
+}
+.createdDate {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.delete {
+    cursor: pointer;
+    font-size: 2rem;
+}
+.delete:hover {
+    background: rgba(0,0,0,.1);
+    font-weight: bold;
+}
+#details {
+    font-size: 1.25rem;
+    max-width: 99.5%;
+    margin-bottom: 0;
+}
+#details2 {
+    font-size: 1.25rem;
+    max-width: 99.5%;
+    margin-bottom: 0;
+}

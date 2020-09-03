@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Note</title>
+    <link href = "style.css" rel = "stylesheet">
+    <script src = "sketch.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Your Note</h1>
+    <h2>Enter a note title, press + icon, then add details!</h2>
+<!--adding part-->
+    <div id = "addingField">
+    <input type = "textarea" id = "addingBar" placeholder="Enter title Here!(Below 30 words)"
+     maxLength = "30"></input>
+    <button id = "addingButton" onclick = "addNote()"><i class="fa fa-plus"></i></button>
+    </div>
+<!--popUpBox part-->
+<div class = "pb" id = "c">
+    <div class = "pb-title">
+        <div class = "title" id = "changableTitle"></div>
+        <button class = "b"  onclick = "create(event)">Create</button>
+        <button class = "b"  onclick = "removE()">&times;</button>
+    </div>
+    <div class = "pb-content">
+        <textarea id = "details" cols="100" rows = "20"></textarea>
+    </div>
+</div>
+<div id = "s-container">
+</div>
+
+<div id = "count">
+Currently you have <span id = "noteNumber">0</span> Note
+</div>
+<hr>
+<!--Stored Note part-->
+<div id = "store">
+</div>
+<!---->
+<div id = "overlay"></div>
+</body>
+</html>
